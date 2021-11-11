@@ -1,0 +1,4 @@
+#000000 Black
+#3E432E algaeGreenDark
+#616F39 algaeGreen
+#A7D129 Green
