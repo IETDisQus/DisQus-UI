@@ -7,20 +7,20 @@ const styles = {
     page1:{
         backgroundColor: "#000000",
         height: "100vh",
-        flex : 1
+        flex : 1,
+        zIndex : 0
     },
     page2 :{
         backgroundColor: "#A7D129",
         height: "100vh",
         flex:1,
-        position : "relative"
+        position : "relative",
+        zIndex : 0
     },
     page:{
         display : "flex",
         flexDirection: "row",
         justifyContent : "center",
-        zIndex : -1,
-        position : "relative"
     },
     intro:{
         color : "#A7D129",
@@ -54,11 +54,11 @@ const styles = {
         justifyContent : "space-around"
     },
     logo:{
-       textALign : "center",
-       backgroundColor : "#000000",
-       zIndex : 10,
-       position : "relative"
-
+       zIndex : 1,
+       position:"absolute",
+        margin : 0,
+        top : "10%",
+        left : "35%"
     }
 }
 
@@ -66,9 +66,7 @@ const styles = {
 export default function LandingPage() {
     return (
         <React.Fragment>
-            <div style={styles.logo}>
-                <img src={logofinal} />
-            </div>
+            <img src={logofinal}  style={styles.logo} width="500px" height="150px" />
             <div style={styles.page}>
             <div style={styles.page1}>
                     <Typography style={styles.intro} >
