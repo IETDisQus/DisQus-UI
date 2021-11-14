@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import LandingPage from './LandingPage';
 import reportWebVitals from './reportWebVitals';
+import Register from './Register';
+import Homepage from './Homepage';
+import LoginPage from './LoginPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LandingPage/>
+    <Register />
   </React.StrictMode>,
   document.getElementById('root')
 );
