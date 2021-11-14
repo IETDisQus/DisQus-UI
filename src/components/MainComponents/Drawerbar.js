@@ -5,6 +5,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { AccountCircle } from "@mui/icons-material";
+import FormDialog from "./InviteDialog";
 
 const Drawerbar = () =>{
     return (
@@ -41,7 +42,7 @@ const Drawerbar = () =>{
               </ListItemIcon>
               <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Notifications</Typography>} />
             </ListItem>
-            <ListItem button key="Invite" sx={{ mb: 2 }}>
+            <ListItem button key="Invite" sx={{ mb: 2 }} >
             <ListItemIcon>
                 <AddReactionIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>

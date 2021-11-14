@@ -1,10 +1,14 @@
-import { Chip, IconButton, TextField, Tooltip, Typography, Button } from "@mui/material";
+import { IconButton, TextField, Typography, Button } from "@mui/material";
 import Box from "@mui/material/Box";
-import { AccountCircle } from "@mui/icons-material";
-import VerifiedIcon from '@mui/icons-material/Verified';
-import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
 import PostAddIcon from '@mui/icons-material/PostAdd';
-import Skills from "../RegisterComponents/Skills";
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
+import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import Tags from "./Tags";
 
 const boxWidth=1095
 
@@ -40,6 +44,7 @@ const Post = () =>{
                 <Typography variant="h6" >Post Your Query Here !</Typography>
             </Box>  
           </Box>
+          
           <Box 
           sx={{ 
           display: 'flex',
@@ -47,7 +52,6 @@ const Post = () =>{
           flexWrap: 'nowrap', 
           width: boxWidth, 
           textAlign: 'left', color: 'primary.main',
-          mb:1  
           }}>
             <Box sx={{ flexGrow:1, ml:6 }} >
                 <TextField 
@@ -67,16 +71,49 @@ const Post = () =>{
           flexWrap: 'nowrap', 
           width: boxWidth, 
           textAlign: 'left', color: 'primary.main',
+          mb:1  
+          }}>
+            <Box sx={{ ml:6, backgroundColor:'#A7D129', color: 'black', fontSize: 25, width: 1002, borderRadius: 1 }} >
+                <IconButton>
+                  <FormatBoldIcon />
+                </IconButton>
+                <IconButton>
+                  <FormatItalicIcon />
+                </IconButton>
+                <IconButton>
+                  <FormatUnderlinedIcon />
+                </IconButton>
+                <IconButton>
+                  <AddPhotoAlternateIcon />  
+                </IconButton>
+                <IconButton>
+                  <AttachFileIcon />  
+                </IconButton>
+                <IconButton>
+                  <InsertLinkIcon />  
+                </IconButton>
+                <IconButton>
+                  <InsertEmoticonIcon />  
+                </IconButton>
+            </Box>  
+          </Box>
+          <Box 
+          sx={{ 
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'nowrap', 
+          width: boxWidth, 
+          textAlign: 'left', color: 'primary.main',
           mb: 1  
           }}>
-            {/* <Box sx={{ ml:6 }} >
-                <Typography>Add Tags :</Typography>
-            </Box>   */}
             <Box sx={{ ml:6 }} >
-                <Skills />
+                <Typography variant="h6" sx={{ color: '#A7D129' }}>Tags : </Typography>
             </Box>  
+            <Box sx={{ flexGrow:1, ml:6, }} >
+              <Tags />
+            </Box>
             <Box sx={{ flexGrow:1, ml:35 }} >
-            <Button variant="filled" sx={{ backgroundColor: '#A7D129', color: '#3E432E', width:100, height:40, borderRadius: 5 }} >
+            <Button variant="filled" sx={{ backgroundColor: '#A7D129', color: '#3E432E', p:2, width:150, height:55, borderRadius: 5 }} >
             <Typography variant="h6">
               Post
             </Typography>
@@ -84,7 +121,6 @@ const Post = () =>{
             </Box>  
           </Box>
         </Box>
-        
         </>
     )
 }
