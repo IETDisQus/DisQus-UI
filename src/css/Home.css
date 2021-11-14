@@ -1,0 +1,82 @@
+.rightBlock{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    align-self: stretch;
+    background-color: #A7D129;
+    text-align: center;
+    color: #3E432E;
+    z-index: 1;
+}
+.rightBlock h1 {
+    position: relative;
+    top: 320px;
+    font-size: x-large;
+    text-align: center;
+    transform: translateY(-50%);
+    padding-top: 3%;
+    z-index: 1;
+}
+.rightBlock h2 {
+    position: relative;
+    top: 340px;
+    font-size: large;
+    text-align: center;
+    transform: translateY(-50%);
+
+    z-index: 1;
+}
+
+.leftBlock{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    background-color:#000000;
+    text-align: center;
+    color: #A7D129;
+    z-index: 1;
+}
+.leftBlock h1 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.imagepos {
+    position: absolute;
+    width: 350px;
+    height: 140px;
+    top: 35px;
+    left: 38.5%;
+    align-items: center;
+    z-index: 10;
+}
+.infopos {
+    position: absolute;
+    width: 700px;
+    height: 520px;
+    top: 240px;
+    left: 2%;
+    align-items: center;
+    z-index: 10;
+}
+.loginbtn{
+    position: absolute;
+    top:300px;
+    width: 300px;
+    height: 45px;
+}
+.logo {
+    position: relative;
+    width: 300px;
+    height: 115px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.regheading {
+    position: relative;
+    padding-left: 150px;
+    font-size: xx-large;
+}
