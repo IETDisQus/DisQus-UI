@@ -14,14 +14,14 @@ const Headermain = () =>{
             component="img"
             sx={{
               height: 80,
-              width: 200,
+              width: 250,
               m: 0.7,
               p: 1,
                 }}
             alt="DisQus"
             src={logofinal}
           />
-          <Box component="span" sx={{ p: 1, ml:45, backgroundColor: 'secondary.main', flexGrow: 1, textAlign: 'center', color: 'primary.main'  }}>
+          <Box component="span" sx={{ p: 1, ml:35, backgroundColor: 'secondary.main', flexGrow: 1, textAlign: 'center', color: 'primary.main'  }}>
               <TextField 
               variant="outlined" 
               placeholder="Search..."

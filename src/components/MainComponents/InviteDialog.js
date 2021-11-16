@@ -25,25 +25,20 @@ export default function FormDialog() {
 
   return (
     <div>
-      {/* <Button variant="filled" onClick={handleClickOpen} sx={{ backgroundColor: '#3E432E', color: '#A7D129', borderRadius: 5, p:2, ml: 6, mt:4 }} >
-            <Typography variant="h6">
-              Post Query
-            </Typography>
-      </Button> */}
-      {/* <ListItem button key="Invite" sx={{ mb: 2 }} onClick={handleClickOpen}>
+      <ListItem button key="Invite" sx={{ mb: 2 }} onClick={handleClickOpen}>
             <ListItemIcon>
                 <AddReactionIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>
-              <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Send Invite</Typography>} />
-            </ListItem> */}
+            <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Send Invite</Typography>} />
+      </ListItem>
       <Dialog open={open} onClose={handleClose} >
-        <DialogTitle>Send Invite</DialogTitle>
-        <DialogContent>
+        <DialogTitle sx={{ backgroundColor: '#3E432E', color: '#A7D129', width:552 }} >Send Invite</DialogTitle>
+        <DialogContent sx={{ backgroundColor: '#3E432E', color: '#A7D129', width:552 }}>
           <SendInvite />
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Post</Button>
+        <DialogActions sx={{ backgroundColor: '#000000', width:584, alignItems: 'center' }} >
+          <Button sx={{ backgroundColor: '#A7D129', color: '#3E432E', fontWeight: 'bold' }} onClick={handleClose}>Cancel</Button>
+          <Button sx={{ backgroundColor: '#A7D129', color: '#3E432E', fontWeight: 'bold', mr:4 }} onClick={handleClose}>Send</Button>
         </DialogActions>
       </Dialog>
     </div>
