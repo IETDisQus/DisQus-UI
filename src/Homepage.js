@@ -38,8 +38,8 @@ const Homepage = () => {
       >
         {/* <Qbox />
         <Qbox /> */}
-        {/* <Post /> */}
-        <SendInvite />
+        <Post />
+        {/* <SendInvite /> */}
       </Box>
       </Box>
     </ThemeProvider>
