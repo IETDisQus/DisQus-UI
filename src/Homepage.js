@@ -44,6 +44,7 @@ const Homepage = () => {
         <VerifyNotification />
         <SenderNotification />
         <ReceiverNotification /> */}
+
       </Box>
       </Box>
     </ThemeProvider>

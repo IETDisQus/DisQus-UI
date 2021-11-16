@@ -2,6 +2,7 @@ import { Typography } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import React from 'react';
 import logofinal from "./resources/DisQusLogo/logofinal.jpg";
+import { GOOGLE_AUTH_URL } from './constants/constant';
 
 const styles = {
     page1:{
@@ -64,6 +65,7 @@ const styles = {
 
 
 export default function LandingPage() {
+   
     return (
         <React.Fragment>
             <img src={logofinal}  style={styles.logo} width="500px" height="150px" />
@@ -77,12 +79,12 @@ export default function LandingPage() {
                     </Typography>
             </div>
             <div style={styles.page2}>
-              <button style={styles.signinbutton}>
+              <a style={styles.signinbutton} href={GOOGLE_AUTH_URL}>
                 <GoogleIcon style={{alignSelf:"flex-start"}} fontSize='medium'></GoogleIcon>
                 <Typography >
                     Sign in with Google
                 </Typography>
-              </button>
+              </a>
             </div>
         </div>
         </React.Fragment>

@@ -12,7 +12,7 @@ import Branch from "./components/RegisterComponents/Branch";
 
 const drawerWidth=300
 
-const Register = () => {
+const Register = (props) => {
   return (
     <>
     <ThemeProvider theme={theme}>
@@ -71,77 +71,6 @@ const Register = () => {
         p: 3, 
         }}
       >
-        {/* <Box sx={{ 
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        alignItems: 'flex-start',
-        mb: 1.5
-        }}>
-          <Box sx={{ p: 2, width: drawerWidth, backgroundColor: 'secondary.main' , textAlign: 'center', color: 'primary.main'  }}>
-            <Typography variant="h6">
-              Name :
-            </Typography>
-          </Box>
-          <Box sx={{ flexGrow:1, border: 2, borderColor: 'primary.main', borderRadius: 1 }} >
-          <TextField
-          value="User"
-          variant="outlined"
-          id="outlined-basic"
-          />
-          </Box>
-        </Box> */}
-
-        {/* <Box sx={{ 
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        alignItems: 'flex-start',
-        mb: 1.5
-        }}>
-          <Box sx={{ p: 2, width: drawerWidth, backgroundColor: 'secondary.main' , textAlign: 'center', color: 'primary.main'  }}>
-            <Typography variant="h6">
-              Contact No. :
-            </Typography>
-          </Box>
-          <Box  >
-          <TextField
-          required
-          variant="outlined"
-          id="outlined-basic"
-          label="Required"
-          type="number"
-          placeholder="Enter contacr no."
-          />
-          </Box>
-        </Box> */}
-
-        {/* <Box sx={{ 
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        alignItems: 'flex-start',
-        mb: 1.5
-        }}>
-          <Box sx={{ p: 2, width: drawerWidth, backgroundColor: 'secondary.main' , textAlign: 'center', color: 'primary.main'  }}>
-            <Typography variant="h6">
-              Branch :
-            </Typography>
-          </Box>
-          <Box  >
-          <Select
-          id="branch"
-          //value={age}
-          // label="Age"
-          // onChange={handleChange}
-          sx={{ width:224 }}
-          >
-          <MenuItem value={"CS"}>CS</MenuItem>
-          <MenuItem value={"IT"}>IT</MenuItem>
-          <MenuItem value={"Mech"}>Mech</MenuItem>
-          </Select>
-          </Box>
-        </Box> */}
         <Uname />
 
         <Contact />
