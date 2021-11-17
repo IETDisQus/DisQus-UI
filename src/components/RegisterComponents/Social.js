@@ -17,7 +17,7 @@ const Social = () =>{
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'row' }} >
-          <Box>
+          <Box sx={{ border: 2, borderColor: 'primary.main', borderRadius: 1 }} >
           <TextField
           variant="outlined"
           id="firstsocial"
@@ -25,7 +25,7 @@ const Social = () =>{
           placeholder="First(if any)"
           />
           </Box>
-          <Box>
+          <Box sx={{ border: 2, borderColor: 'primary.main', borderRadius: 1, ml:1 }}>
           <TextField
           variant="outlined"
           id="secondsocial"
@@ -33,7 +33,7 @@ const Social = () =>{
           placeholder="Second(if any)"
           />
           </Box>
-          <Box>
+          <Box sx={{ border: 2, borderColor: 'primary.main', borderRadius: 1, ml:1 }}>
           <TextField
           variant="outlined"
           id="thirdsocial"

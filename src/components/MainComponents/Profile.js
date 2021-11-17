@@ -35,6 +35,7 @@ const Profile = () =>{
           value="User"
           variant="outlined"
           id="outlined-basic"
+          sx={{ width: 500 }}
           />
           </Box>
         </Box>
@@ -56,6 +57,7 @@ const Profile = () =>{
           value="0000000000"
           variant="outlined"
           id="outlined-basic"
+          sx={{ width: 500 }}
           />
           </Box>
         </Box>
@@ -77,6 +79,7 @@ const Profile = () =>{
           value="CS"
           variant="outlined"
           id="outlined-basic"
+          sx={{ width: 500 }}
           />
           </Box>
         </Box>
@@ -98,6 +101,7 @@ const Profile = () =>{
                 value="A"
                 variant="outlined"
                 id="outlined-basic"
+                sx={{ width: 500 }}
               />
               </Box>
             </Box>

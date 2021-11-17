@@ -2,9 +2,7 @@ import { Toolbar, Typography, Divider, List, ListItemAvatar, ListItemIcon, Avata
 import HomeIcon from '@mui/icons-material/Home'
 import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import AddReactionIcon from '@mui/icons-material/AddReaction';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import { AccountCircle } from "@mui/icons-material";
 import FormDialog from "./InviteDialog";
 
 const Drawerbar = () =>{
@@ -15,10 +13,10 @@ const Drawerbar = () =>{
           <List>
             <ListItem>
               <ListItemAvatar>
-                <Avatar sx={{ color: '#000000'}}/>
+                <Avatar sx={{ color: 'black', border:4, borderColor: 'black'}}/>
                 {/* <AccountCircle /> */}
               </ListItemAvatar>
-              <ListItemText primary="User" secondary="email@ietdavv.edu.in" sx={{ color: '#000000' }}/>
+              <ListItemText primary="User" secondary="email@ietdavv.edu.in" sx={{ color: 'black' }}/>
             </ListItem>
           </List>
           </Toolbar>
@@ -28,19 +26,19 @@ const Drawerbar = () =>{
             <ListItemIcon>
                 <HomeIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>
-              <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Home</Typography>}/>
+              <ListItemText primary={<Typography variant="h6" sx={{ color: '#3E432E', fontWeight: 'bold' }}>Home</Typography>}/>
             </ListItem>
             <ListItem button key="Profile" sx={{ mb: 2 }}>
             <ListItemIcon>
                 <PersonIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>
-              <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Profile</Typography>} />
+              <ListItemText primary={<Typography variant="h6" sx={{ color: '#3E432E', fontWeight: 'bold' }}>Profile</Typography>} />
             </ListItem>
             <ListItem button key="Notification" sx={{ mb: 2 }}>
             <ListItemIcon>
                 <NotificationsIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>
-              <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Notifications</Typography>} />
+              <ListItemText primary={<Typography variant="h6" sx={{ color: '#3E432E', fontWeight: 'bold' }}>Notifications</Typography>} />
             </ListItem>
 
             {/* <ListItem button key="Invite" sx={{ mb: 2 }} >
@@ -55,7 +53,7 @@ const Drawerbar = () =>{
             <ListItemIcon>
                 <ExitToAppIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>
-              <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Logout</Typography>} />
+              <ListItemText primary={<Typography variant="h6" sx={{ color: '#3E432E', fontWeight: 'bold' }}>Logout</Typography>} />
             </ListItem>
             <ListItem>    
             <Button variant="filled" sx={{ backgroundColor: '#3E432E', color: '#A7D129', borderRadius: 5, p:2, ml: 6, mt:4 }} >

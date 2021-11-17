@@ -5,7 +5,8 @@ import theme from "./Theme/AppTheme";
 import Drawerbar from "./components/MainComponents/Drawerbar";
 import Headermain from "./components/MainComponents/Headermain";
 import Qbox from "./components/MainComponents/Qbox";
-
+import Profile from "./components/MainComponents/Profile";
+import RegisterProfile from "./components/MainComponents/RegisterProfile";
 
 const drawerWidth=300
 
@@ -34,6 +35,7 @@ const Homepage = () => {
         mt:1,
         }}
       >
+        {/* <RegisterProfile /> */}
         <Qbox /> 
          <Qbox />
         {/* <Answer /> */}

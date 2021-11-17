@@ -29,7 +29,7 @@ export default function FormDialog() {
             <ListItemIcon>
                 <AddReactionIcon fontSize="large" variant="filled" sx={{ color: '#3E432E' }}/>
               </ListItemIcon>
-            <ListItemText primary={<Typography variant="h5" sx={{ color: '#3E432E' }}>Send Invite</Typography>} />
+            <ListItemText primary={<Typography variant="h6" sx={{ color: '#3E432E', fontWeight: 'bold' }}>Send Invite</Typography>} />
       </ListItem>
       <Dialog open={open} onClose={handleClose} >
         <DialogTitle sx={{ backgroundColor: '#3E432E', color: '#A7D129', width:552 }} >Send Invite</DialogTitle>

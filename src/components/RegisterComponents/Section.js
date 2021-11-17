@@ -16,7 +16,7 @@ const Section = () => {
                   Section :
                 </Typography>
               </Box>
-              <Box  >
+              <Box sx={{ flexGrow:1, border: 2, borderColor: 'primary.main', borderRadius: 1 }} >
               <Select
               id="section"
               //value={age}
