@@ -68,7 +68,7 @@ const names = [
                   Skills :
                 </Typography>
               </Box>
-              <Box  >
+              <Box sx={{ flexGrow:1, border: 2, borderColor: 'primary.main', borderRadius: 1 }} >
               <Select 
               placeholder="Add your Skills"
               sx={{ width:224 }}

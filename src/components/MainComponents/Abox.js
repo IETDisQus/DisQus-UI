@@ -81,10 +81,20 @@ const Abox = () =>{
           mb: 1  
           }}>
             <Box sx={{ ml:6 }} >
+              {/* Change color on verification and tooltip value */}
+              <IconButton >
+              <Tooltip title={<Typography variant="body1" color="white" >Verified</Typography>} arrow>
                 <VerifiedIcon sx={{fontSize:27}}/>
+              </Tooltip>
+              </IconButton>
             </Box>  
             <Box sx={{ ml:6, }} >
-                <ThumbUpIcon />
+              {/* Change color on first click and update x in tooltip*/}
+              <IconButton >
+                <Tooltip title={<Typography variant="body1" color="white" >x likes</Typography>} arrow>
+                <ThumbUpIcon /> 
+                </Tooltip>
+                </IconButton>
             </Box>
           </Box>
         </Box>

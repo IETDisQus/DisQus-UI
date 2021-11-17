@@ -30,7 +30,7 @@ const Register = (props) => {
             component="img"
             sx={{
               height: 80,
-              width: 200,
+              width: 250,
               m: 0.7,
               p: 1,
                 }}
